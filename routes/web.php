@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LevelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/level', [LevelController::class,'index']);
+
+// Jobsheet 5
+//Route::get('/hello', function () {
+//    return view('hello', ['name' => 'Andi']);
+//    });
+
+//return View::make('hello', ['name' => 'Andi']);
+
+//Route::get('/hello', function () {
+//return view('blog.hello', ['name' => 'Andi']);
+//});
+
