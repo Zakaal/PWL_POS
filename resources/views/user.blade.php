@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html> 
 <html>
     <head>
         <title>Data User</title>
@@ -20,4 +20,29 @@
             </tr>
         </table>
     </body>
+</html>
+ --}}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+</head>
+<body>
+    <h1>User Data</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Jumlah Pengguna</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ $userCount }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
